@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Containers Demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body{
+      background-image: url(bg.jpg);
+      repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .cointainer{
+      background-color: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="cointainer m-5 rounded text-white p-3">
+    <div>
+      <h2>Robotics Club Regisration Form</h2>
+      <form>
+        <div class="row mb-3">
+          <div class="form-group col col-md-6 col-sm-12">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter name">
+          </div>
+          <div class="form-group col col-md-6 col-sm-12">
+            <label for="age">Age</label>
+            <input type="text" id="age" class="form-control" placehloder="Enter age">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="form-group col col-md-6 col-sm-12">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" class="form-control" placeholder="Enter email">
+          </div>
+          <div class="form-group col col-md-6 col-sm-12">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" class="form-control" placeholder="Enter phone number">
+          </div>
+        </div>
+        <div class="row mx-1 mb-3">
+          <div class="col col-sm-12 col-md-12">
+            <p>Preferred Robotics Topic</p>
+            <input type="checkbox" class="form-check-input" id="pro">
+            <label class="form-check-label" for="pro">Programming</label><br>
+            <input type="checkbox" class="form-check-input" id="elec">
+            <label class="form-check-label" for="elec">Electronics</label><br>
+            <input type="checkbox" class="form-check-input" id="mech">
+            <label class="form-check-label" for="mech">Mechanical Design</label>
+          </div>
+        </div>
+        <div class="row mx-1 mb-3">
+          <div class="col col-sm-12 col-md-12">
+            <label class="form-check-label" for="radio">Robotics Experience Level</label><br>
+            <input type="radio" name="radio" class="form-check-input" id="int" value="Beginner">Beginner<br>
+            <input type="radio" name="radio" class="form-check-input" id="int" value="Intermediate">Intermediate<br>
+            <input type="radio" name="radio" class="form-check-input" id="int" value="Advanced">Advanced
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="form-group col col-md-12 col-sm-12">
+            <label for="name">Preferred Robotics Project</label>
+            <input type="text" id="name" class="form-control" placeholder="Choose a project">
+          </div>
+          <div class="form-group col col-md-12 col-sm-12">
+           <label for="textarea">Statement of Interest</label><br>
+           <textarea class="form-control" id="textarea" name="textarea" rows="4" placeholder="Type here..."></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
